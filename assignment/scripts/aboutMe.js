@@ -56,4 +56,79 @@
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
+let firstName = "Luis";
+let lastName = "Ortiz";
+let fullName = firstName + " " + lastName;
+console.log(fullName);
 
+let luckyNumber = 16;
+
+console.log("My name is " + fullName + ", and I think " + luckyNumber +" is a winner!" );
+
+let adventurous = true;
+
+let food = "Steak";
+
+let pets = 0;
+
+let friendsPets = 4;
+
+pets += 2;
+
+const allowedPets = 3;
+
+//adveturous conditional
+
+if (adventurous) {
+    console.log("Adventure is great!");
+    if (luckyNumber == 2) {
+        console.log("roll the dice!");
+    }
+} else {
+    console.log("How about we stay home?");
+}
+
+//pets conditional
+
+if (pets < allowedPets) {
+    console.log("I can have more pets!");
+} else if (pets == allowedPets) {
+    console.log("I have enough pets.");
+} else {
+    console.log("Oh no, I have too many pets!");
+}
+
+//stretch goal
+
+let mostPets;
+
+if (pets > friendsPets) {
+    mostPets = pets;
+    console.log(mostPets);
+} else if (friendsPets > pets) {
+    mostPets = friendsPets;
+    console.log(mostPets);
+} else {
+    mostPets = pets;
+    console.log(mostPets, "both are equal");
+}
+
+//switch statement
+
+switch (luckyNumber) {
+    case 1:
+        console.log( "First is the worst");
+     break;
+    case 2:
+        console.log("Second is the best");
+     break;
+    case 3:
+        console.log("Third is the one with the polka dot dress");
+     break;
+    default:
+        console.log("Luck is what happens when preparation meets opportunity");
+}
+
+//ternary operator
+
+adventurous ? console.log("Adventure is out there!"): console.log("Lets stay home.");
